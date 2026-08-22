@@ -53,7 +53,6 @@
 <span class="brand__tag">Heating &amp; Cooling</span>
 </span>
 </a>
-<div aria-hidden="true" class="nav-backdrop"></div>
 <nav aria-label="Primary" class="nav" id="primary-nav">
 <a aria-current="page" class="nav__link" href="/">Home</a>
 <a class="nav__link" href="/about/">About</a>
@@ -70,6 +69,7 @@
 </button>
 </div>
 </header>
+<div aria-hidden="true" class="nav-backdrop"></div>
 <main id="main">
 <section class="hero has-bg">
 <div class="hero__glow"></div>
@@ -119,12 +119,14 @@
 </div>
 <div class="field row">
 <div>
-<label for="city-hero">City</label>
-<input autocomplete="address-level2" class="input" id="city-hero" name="city" placeholder="Ridgetown" type="text"/>
+<label for="city-hero">City <span class="req">*</span></label>
+<input autocomplete="address-level2" class="input" id="city-hero" name="city" placeholder="Ridgetown" required="" type="text"/>
+<span class="error-text">Enter your city.</span>
 </div>
 <div>
-<label for="postal-hero">Postal Code</label>
-<input autocomplete="postal-code" class="input" id="postal-hero" name="postal" placeholder="N1A 1A1" type="text"/>
+<label for="postal-hero">Postal Code <span class="req">*</span></label>
+<input autocomplete="postal-code" class="input" id="postal-hero" name="postal" placeholder="N1A 1A1" required="" type="text"/>
+<span class="error-text">Enter your postal code.</span>
 </div>
 </div>
 <div class="field">
@@ -143,7 +145,6 @@
 <div class="trust-strip__item"><span class="ic"><svg aria-hidden="true" fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg></span><div><b>Licensed</b><span>&amp; fully insured</span></div></div>
 <div class="trust-strip__item"><span class="ic"><svg aria-hidden="true" fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 18V6"></path></svg></span><div><b>Free</b><span>No-obligation quotes</span></div></div>
 <div class="trust-strip__item"><span class="ic"><svg aria-hidden="true" fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg></span><div><b>Guaranteed</b><span>100% satisfaction</span></div></div>
-<div class="trust-strip__item"><span class="ic"><svg aria-hidden="true" fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg></span><div><b>Lennox</b><span>Premier Dealer</span></div></div>
 </div>
 </section>
 <section class="section">
@@ -256,8 +257,8 @@
 <div class="container">
 <div class="section-head reveal">
 <span class="eyebrow">Comfort Care</span>
-<h2>Comfort Care: Our Annual Maintenance Plan</h2>
-<p>Keep your furnace, air conditioner, heat pump, or boiler running its best with a Comfort Care membership. Members get priority booking, 15% off repairs all year, and detailed service records that back your warranty, all from the same local team that already knows your equipment.</p>
+<h2>Join Our Annual Comfort Plan</h2>
+<p>Well-maintained equipment breaks down less, runs more efficiently, and lasts longer. The plan builds that care in automatically: two thorough inspections a year, priority booking ahead of non-members, 15% off any repair along the way, and a running service log your future technician, or buyer, will thank you for.</p>
 </div>
 <div class="center" style="margin-top:24px">
 <a class="btn btn-primary btn-lg reveal" href="/contact/#quote">Ask About Comfort Care <svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
@@ -268,7 +269,7 @@
 <div class="cta-band reveal">
 <div class="cta-band__inner">
 <div>
-<h2>Ready to Improve Your Home Comfort?</h2>
+<h2>Book Your Free Quote Today</h2>
 <p>From a propane furnace on a farm outside Bothwell to a ductless mini-split in a Ridgetown sunroom, our local crew has the tools and the parts to keep your home comfortable through every Chatham-Kent season, without the wait of an out-of-town chain.</p>
 </div>
 <div style="display:flex;gap:14px;flex-wrap:wrap">
@@ -327,19 +328,18 @@
 <p class="footer-about">Honest, dependable heating and cooling for Ridgetown, Ontario and the surrounding Chatham-Kent communities. Licensed, insured, and available 24/7.</p>
 </div>
 <div>
-<h4>Company</h4>
+<h2>Company</h2>
 <div class="footer-links">
 <a href="/">Home</a><a href="/about/">About</a>
-<a href="/blog/">Blog</a>
 <a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy Policy</a>
 </div>
 </div>
 <div>
-<h4>Our Services</h4>
+<h2>Our Services</h2>
 <div class="footer-links"><a href="/services/furnace-repair/">Furnace Repair</a><a href="/services/ac-repair/">AC Repair</a><a href="/services/ductless-ac-installation/">Ductless AC Installation</a><a href="/services/heat-pump-repair-installation/">Heat Pump Repair &amp; Installation</a><a href="/services/fireplace-installation/">Fireplace Installation</a><a href="/services/thermostat-repair-replacement/">Thermostat Repair &amp; Replacement</a><a href="/services/duct-cleaning/">Duct Cleaning</a><a href="/services/boiler-service/">Boiler Service</a></div>
 </div>
 <div>
-<h4>Get in Touch</h4>
+<h2>Get in Touch</h2>
 <ul class="footer-contact">
 <li><svg aria-hidden="true" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:+15487087251">(548) 708-7251</a></li>
 <li><svg aria-hidden="true" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg><a href="mailto:contact@ridgetownheatingcooling.ca">contact@ridgetownheatingcooling.ca</a></li>
